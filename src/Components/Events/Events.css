@@ -1,0 +1,70 @@
+.events {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.events_con {
+  width: 100%;
+  max-width: 2000px;
+}
+
+.events_head {
+  text-align: center;
+}
+
+.event_con {
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-top: 20px;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slider {
+  display: inline-flex;
+  transition: transform 0.5s ease;
+  list-style: none;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.item {
+  min-width: 310px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 20px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.content a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hide scrollbar */
+.event_con::-webkit-scrollbar {
+  display: none;
+}
+
+.event_con {
+  scrollbar-width: none; /* Firefox */
+}
